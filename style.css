@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    background-color: rgb(202, 206, 209);
+}
+a{
+    text-decoration: none;
+
+    color: white;
+}
+li{
+    list-style: none;
+
+}
+h1{
+    font-size: 2.5rem;
+
+}
+h2{
+margin-bottom: 30px;
+
+}
+h3{
+    font-size: 1.8rem;
+}
+h4{
+    font-size: 1.2rem;
+    color: rgb(27, 162, 196);
+}
+p{
+    font-size: 1.2rem;
+   color: gray;
+}
+button{
+    height: 50px;
+    width: 22%;
+    border-radius: 50PX;
+    outline: none;
+    border: none;
+    background-color: rgb(27, 162, 196);
+    color: white;
+   min-width: 15%;
+    cursor: pointer;
+}
+
+header{
+    background: url(./crowdfunding-product-page-main/images/image-hero-desktop.jpg) center/cover;
+    height: 45vh;
+}
+nav{
+color: whitesmoke;
+display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 80%;
+ margin: 0 auto;
+ padding-top: 50px;
+  
+}
+nav ul{
+display: flex;
+justify-content: space-between;
+ align-items: center;
+ 
+ width: 30%;
+ color: whitesmoke;
+}
+nav li{
+color: whitesmoke;
+}
+nav #logo{
+align-items: center;
+   margin: auto 0;
+}
+section{
+ margin: 0 30px;
+
+}
+.module1{
+    position: relative;
+
+   padding: 70px 30px !important;
+}
+#mastercraft{
+    position: absolute;
+   top: -25px;
+    left: 50%;
+transform: translateX(-50%);
+}
+footer:before{
+
+    background: url(./crowdfunding-product-page-main/images/logo-mastercraft.svg);
+
+}
+.module1,.module2,footer{
+
+
+max-width: 1000px;
+margin: -100px auto;
+border-radius: 8px;
+background-color: rgb(232, 232, 232);
+
+}
+
+.module1 p{
+    text-align: center;
+    line-height: 50px;
+}
+.module1 h1{
+    text-align: center;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+margin-top: 50px;
+}
+#btn2{
+    background-color: rgba(128, 128, 128, 0.324);
+  
+   display: flex;
+   align-items: center;
+   gap: 10px;
+
+}
+.btn h3{
+    font-size: 1rem;
+    color: black;
+}
+
+.module2{
+    margin-top: 150px;
+
+    display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+position: relative;
+padding: 32px 30PX;
+}
+.module2::after{
+ position: absolute;
+ border: 5px solid gray;
+ width: 5%;
+ background-color: rgb(35, 35, 219);
+ height: 10PX;
+}
+ 
+.nombre{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.barre{
+  background-color: gainsboro;
+  
+  
+height: 10%;
+    border-radius: 7px;
+}
+.aqua{
+border: 5px solid rgb(27, 162, 196);
+
+    width: 80%;
+    border-radius: 7px; 
+}
+footer{
+
+ margin-top: 120PX;
+  padding: 30px 60px;
+}
+#p1,#p2{
+    line-height: 30px;
+}
+#p2{
+    line-height: 30px;
+    margin-top: 30px;
+}
+.promotion1,.promotion2,.promotion3{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 50px;
+    border: 2px solid rgba(68, 66, 66, 0.127);
+    border-radius: 8px;  
+padding: 44px 30px;
+  
+    align-items: center;
+}
+
+.flex,.flex2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+   
+    
+}
+.flex2{
+gap: 10px;
+    
+}
+.promotion1 p,.promotion2 p , .promotion3 p {
+font-size: 1.3rem;
+}
+.promotion1 h3,.promotion2 h3 ,.promotion3 h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+@media screen and (max-width: 841px){
+    footer{
+        height: 700%;
+    }
+nav ul{
+ width: 60%;
+}
+    #btn2 {
+     background: none; 
+     
+    }
+    #btn2 h3 {
+        display: none;
+    }
+    #btn1 {
+ 
+ 
+        width: 40%;
+        
+    }
+    hr{
+        width: 50%;
+        margin: 10PX auto;
+    }
+    .module2{
+        display: grid;
+
+        grid-template-rows: 250PX 100PX;
+        height: 100%;
+        width: 100%;
+       
+    }
+.nombre{
+    display: block;
+     text-align: center;
+     margin: 0 auto;
+ 
+}
+.nombre-mid,.nombre-right{
+    margin-top: 20px;
+}
+.Information  br,.promotion1 br,.promotion2 br, .promotion3 br{
+ display: none
+ ;
+
+}
+
+
+@media screen and (max-width: 540px){
+
+
+.promotion1 p,
+    .promotion2 p,
+    .promotion3 p{
+    font-size: 1rem;
+}
+.promotion1 button,
+.promotion2 button,
+.promotion3 button{
+    width: 50%;
+    margin-top: 10PX;
+}
+.flex,
+.flex2 {
+    display: block;
+
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}}
